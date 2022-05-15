@@ -1,0 +1,73 @@
+.company {
+  z-index: 5;
+  position: relative;
+  backdrop-filter: blur(12px);
+  background: linear-gradient(89.96deg, rgba(203, 71, 160, 0.5) 0.02%, rgba(105, 71, 203, 0.5) 49.47%, rgba(0, 255, 133, 0.5) 99.97%);
+
+  &__inner {
+    padding: 100px 0;
+    background: rgba(213, 236, 255, 0.3);
+    backdrop-filter: blur(12px);
+
+    @media(max-width: 772px) {
+      padding: 40px 0;
+    }
+  }
+
+  &__body {}
+
+  &__item {
+    @media(max-width: 1024px) {
+      flex: 0 1 100%;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+  }
+
+  &-filter {
+    &__left {
+      position: absolute;
+      left: 0;
+      top: -100%;
+      width: 678px;
+      height: 640px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      @media(max-width: 772px) {
+        display: none;
+      }
+
+    }
+
+    &__right {
+      position: absolute;
+      right: 0;
+      top: -100%;
+      width: 678px;
+      width: 640px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      @media(max-width: 772px) {
+        display: none;
+      }
+
+    }
+  }
+}

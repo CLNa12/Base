@@ -1,0 +1,149 @@
+.we {
+  padding: 50px 0;
+
+  @media(max-width: 772px) {
+    padding: 25px 0;
+    overflow: hidden;
+  }
+
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+
+    @media(max-width: 900px) {
+      flex-wrap: wrap;
+      gap: 20px;
+      text-align: center;
+    }
+  }
+
+  &__item {}
+
+  &__title {
+    margin-bottom: 25px;
+    width: 380px;
+
+    span {
+      background: linear-gradient(180deg, #0becdf 40.48%, #0AD17C 70.23%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+    }
+
+    @media(max-width: 772px) {
+      width: auto;
+      font-size: 42px;
+    }
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 160%;
+    color: #F8F6FA;
+    opacity: 0.7;
+    width: 305px;
+    margin-bottom: 35px;
+
+    @media(max-width: 772px) {
+      width: auto;
+    }
+  }
+
+  &__btn {
+    @media(max-width: 772px) {
+      margin-bottom: 100px;
+    }
+
+    @media(max-width: 665px) {
+      width: 100%;
+    }
+  }
+
+  &__box {
+    background: rgba(46, 47, 64, 0.3);
+    backdrop-filter: blur(4px);
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 65px 30px 30px 30px;
+    position: relative;
+
+    &-filter {
+      position: absolute;
+      bottom: 10%;
+      right: -3%;
+      @media(max-width: 772px) {
+        object-fit: cover;
+        right: -5%;
+      }
+    }
+
+    @media(max-width: 1024px) {
+      flex: 0 1 50%;
+      margin-bottom: 65px;
+    }
+    @media(max-width: 772px) {
+      flex: 0 1 100%;
+      margin-bottom: 65px;
+    }
+
+  }
+
+  &__box-img {
+    position: absolute;
+    top: -25%;
+    @media(max-width: 772px) {
+      object-fit: cover;
+
+    }
+
+  }
+
+  &__box-title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 160%;
+    color: #F8F6FA;
+    margin-bottom: 15px;
+  }
+
+  &__box-text {
+    width: 284px;
+
+    @media(max-width: 772px) {
+      width: auto;
+    }
+  }
+
+}
+
+.box {
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 816px;
+
+    @media(max-width: 772px) {
+      width: auto;
+    }
+  }
+
+  &-1 {
+    margin-bottom: 40px;
+  }
+
+  &-2 {
+    margin-bottom: 40px;
+  }
+
+  &-4 {
+    margin-bottom: 0 !important;
+  }
+
+}

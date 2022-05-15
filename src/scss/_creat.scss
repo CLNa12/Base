@@ -1,0 +1,57 @@
+.creat {
+  padding: 60px 0;
+  position: relative;
+
+  @media(max-width: 772px) {
+    padding: 30px 0;
+  }
+
+  &-bg {
+    position: absolute;
+    left: 40%;
+    top: -10%;
+    z-index: -5;
+
+    @media(max-width: 900px) {
+      width: 100%;
+      object-fit: cover;
+      left: 0;
+      top: -10%;
+    }
+  }
+
+  &__body {
+    text-align: center;
+  }
+
+  &__title {
+    margin-bottom: 25px;
+
+    span {
+      background: linear-gradient(180deg, #0becdf 40.48%, #0AD17C 70.23%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+    }
+
+    @media(max-width: 772px) {
+      margin-bottom: 15px;
+      font-size: 42px;
+    }
+  }
+
+  &__text {
+    width: 615px;
+    margin: 0 auto;
+    opacity: 0.6;
+    margin-bottom: 35px;
+
+    @media(max-width: 772px) {
+      width: auto;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__btn {}
+}

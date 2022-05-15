@@ -1,0 +1,59 @@
+.achievements {
+  position: relative;
+  backdrop-filter: blur(12px);
+  background: linear-gradient(89.96deg, rgba(203, 71, 160, 0.5) 0.02%, rgba(105, 71, 203, 0.5) 49.47%, rgba(0, 255, 133, 0.5) 99.97%);
+
+  &__inner {
+    background: rgba(213, 236, 255, 0.3);
+    backdrop-filter: blur(12px);
+    padding: 60px 0;
+    @media(max-width: 772px) {
+      padding: 30px 0;
+    }
+  }
+
+  &__body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media(max-width: 772px) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__num {
+    font-weight: 500;
+    font-size: 61px;
+    line-height: 120%;
+    color: #F8F6FA;
+
+    span {
+      display: block;
+      font-weight: 400;
+      font-size: 25px;
+      line-height: 150%;
+      color: #F8F6FA;
+      opacity: 0.7;
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    @media(max-width: 772px) {
+      flex: 0 1 100%;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  }
+
+  &-bg {
+    position: absolute;
+    left: 0;
+    top: -100%;
+    z-index: -2;
+    width: 50%;
+    @media(max-width: 772px) {
+      display: none;
+    }
+  }
+}

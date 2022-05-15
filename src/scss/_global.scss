@@ -1,0 +1,41 @@
+body {
+  font-family: 'Oswald';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #F8F6FA;
+  background-color: #0A0C26;
+}
+
+.container {
+  max-width: 1080px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.title {
+  font-family: 'Oswald';
+  font-weight: 700;
+  font-size: 61px;
+  line-height: 120%;
+  color: #F8F6FA;
+}
+
+.btn {
+  padding: 15px 50px;
+  font-size: 16px;
+  line-height: 160%;
+  color: #F5E8F3;
+  background: linear-gradient(97.62deg, #EB11AA -15.99%, #2E81E2 104.3%);
+  border-radius: 2px;
+  display: inline-block;
+  transition: all 0.3s ease-in-out 0s;
+
+  &:hover {
+    box-shadow: 0 2px 10px rgba(213, 80, 208, 0.9);
+  }
+}
